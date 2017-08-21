@@ -42,4 +42,8 @@ public class User {
     public void addAccount(Account anAcct) {
         this.accounts.add(anAcct);
     }
+
+    public String getUuid() {
+        return this.uuid;
+    }
 }

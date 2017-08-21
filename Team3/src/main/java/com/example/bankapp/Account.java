@@ -21,8 +21,12 @@ public class Account {
         this.transactions = new ArrayList<>();
 
         // add to holder and bank lists
-        holder.addAccount(this);
-        theBank.addAccount(this);
+//        holder.addAccount(this);
+//        theBank.addAccount(this);
 
+    }
+
+    public String getUuid() {
+        return this.uuid;
     }
 }
