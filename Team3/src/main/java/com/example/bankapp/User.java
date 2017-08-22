@@ -6,6 +6,7 @@ import javax.xml.transform.Source;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.UUID;
 
 
 public class User {
@@ -15,6 +16,7 @@ public class User {
     private String uuid;
     private byte pinHash[];
     private ArrayList<Account> accounts;
+    private String UUID;
 
     public User(String firstName, String lastName, String pin, Bank theBank) {
         this.firstName = firstName;
@@ -41,5 +43,9 @@ public class User {
 
     public void addAccount(Account anAcct) {
         this.accounts.add(anAcct);
+    }
+
+    public String getUUID(){
+        return this.uuid;
     }
 }
